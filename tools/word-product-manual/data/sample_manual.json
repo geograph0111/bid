@@ -1,0 +1,41 @@
+{
+  "title": "在途商旅产品功能手册",
+  "subtitle": "TMC / 商旅 SaaS 企业差旅管理平台",
+  "sections": [
+    {
+      "code": "01",
+      "title": "智能出行",
+      "pages": [
+        {
+          "type": "standard",
+          "code": "01.01",
+          "title": "AI智能行程规划",
+          "summary": "根据员工需求、企业差旅政策与实时资源，生成可执行的出行方案。",
+          "screenshot": "",
+          "features": [
+            {"name": "AI智能规划", "description": "自动组合交通、酒店与时间安排，减少人工规划。"},
+            {"name": "多方案推荐", "description": "提供不同成本、效率与舒适度的组合方案。"},
+            {"name": "差标校验", "description": "规划过程中同步识别企业差旅标准。"},
+            {"name": "成本优化", "description": "优先推荐符合政策的综合成本方案。"},
+            {"name": "一键预订", "description": "推荐方案可直接进入预订流程。"},
+            {"name": "行程联动", "description": "规划结果与订单、行程管理保持一致。"}
+          ],
+          "values": ["减少行程规划时间", "提升员工出行体验", "强化差旅政策执行"]
+        },
+        {
+          "type": "mobile_gallery",
+          "code": "01.02",
+          "title": "移动端商旅服务",
+          "summary": "通过统一移动入口完成查询、预订、审批与行程管理。",
+          "screenshots": [],
+          "features": [
+            {"name": "移动预订", "description": "员工可随时完成机票、酒店、火车等预订。"},
+            {"name": "审批提醒", "description": "及时查看待办审批及处理结果。"},
+            {"name": "行程查看", "description": "集中查看订单与出行信息。"}
+          ],
+          "values": ["随时随地处理商旅事务", "减少多系统切换"]
+        }
+      ]
+    }
+  ]
+}
