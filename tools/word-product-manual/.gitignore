@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+output/*.docx
+assets/screenshots/*
+!assets/screenshots/.gitkeep
