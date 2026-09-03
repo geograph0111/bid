@@ -1,0 +1,124 @@
+{
+  "title": "在途商旅产品功能手册",
+  "subtitle": "企业差旅管理平台｜Master Template v0.3",
+  "sections": [
+    {
+      "code": "01",
+      "title": "系统访问与身份认证",
+      "summary": "统一入口、多终端访问与企业身份体系集成",
+      "pages": [
+        {
+          "type": "standard",
+          "code": "01.01",
+          "title": "系统登录",
+          "summary": "员工可通过 PC 或 APP 使用账号密码、手机验证码登录，并支持企业 SSO 集成。",
+          "features": [
+            {"name": "多终端访问", "description": "支持 PC、APP 端访问，为员工提供一致的系统登录入口。"},
+            {"name": "账号密码登录", "description": "支持手机号或邮箱与密码完成身份验证。"},
+            {"name": "手机验证码登录", "description": "支持短信验证码快速登录。"},
+            {"name": "账号找回", "description": "支持通过手机号或邮箱完成账号及密码恢复。"},
+            {"name": "单点 SSO 登录", "description": "与企业 OA、钉钉、飞书等系统对接后支持单点登录或一键跳转。"}
+          ],
+          "values": ["统一员工访问入口", "减少重复登录", "支持自助恢复"]
+        },
+        {
+          "type": "annotated",
+          "code": "01.02",
+          "title": "登录界面功能标注",
+          "summary": "以产品界面为中心，将关键操作与功能说明一一对应。",
+          "features": [
+            {"name": "登录入口", "description": "统一进入企业差旅平台。"},
+            {"name": "身份验证", "description": "完成账号、验证码等身份校验。"},
+            {"name": "SSO入口", "description": "从企业统一身份平台直接进入。"},
+            {"name": "找回账号", "description": "自助完成账号恢复。"}
+          ],
+          "values": ["操作路径清晰", "功能证据直观"]
+        },
+        {
+          "type": "pc_mobile",
+          "code": "01.03",
+          "title": "PC 与移动端协同",
+          "summary": "管理端负责配置与管理，员工端承载申请、预订和行程服务。",
+          "features": [
+            {"name": "管理端", "description": "配置、审核、管理及数据查看。"},
+            {"name": "员工端", "description": "申请、预订、行程与移动服务。"},
+            {"name": "数据协同", "description": "PC 与移动端共享统一业务数据。"}
+          ],
+          "values": ["统一业务体验", "管理与员工协同", "数据一致"]
+        },
+        {
+          "type": "mobile_gallery",
+          "code": "01.04",
+          "title": "移动端商旅服务",
+          "summary": "覆盖员工差旅申请、预订与行程服务。",
+          "mobile_labels": ["员工首页", "行程服务", "申请审批"],
+          "screenshots": [],
+          "features": [
+            {"name": "移动申请", "description": "员工可随时提交差旅申请。"},
+            {"name": "移动预订", "description": "在移动端完成出行资源预订。"},
+            {"name": "行程查看", "description": "集中查看个人差旅行程。"}
+          ],
+          "values": ["随时可用", "移动协同", "行程集中管理"]
+        },
+        {
+          "type": "process",
+          "code": "01.05",
+          "title": "统一身份登录流程",
+          "summary": "从企业身份入口到商旅平台的统一访问链路。",
+          "steps": [
+            {"title": "企业身份入口", "description": "OA / 企业身份系统"},
+            {"title": "身份校验", "description": "完成用户认证"},
+            {"title": "SSO跳转", "description": "进入商旅平台"},
+            {"title": "权限识别", "description": "加载用户权限"},
+            {"title": "进入首页", "description": "开始差旅操作"}
+          ],
+          "values": ["减少重复认证", "统一权限入口"]
+        },
+        {
+          "type": "dashboard",
+          "code": "01.06",
+          "title": "访问与账号数据看板",
+          "summary": "从访问量、活跃用户等指标观察平台使用情况。",
+          "metrics": [
+            {"name": "月活用户", "value": "--"},
+            {"name": "登录次数", "value": "--"},
+            {"name": "SSO占比", "value": "--"},
+            {"name": "自助找回", "value": "--"}
+          ],
+          "features": [
+            {"name": "访问趋势", "description": "观察用户登录与访问变化。"},
+            {"name": "渠道分析", "description": "区分账号、验证码及 SSO 等访问方式。"}
+          ]
+        },
+        {
+          "type": "overview",
+          "code": "01.07",
+          "title": "系统访问能力总览",
+          "summary": "统一入口、多端访问、身份集成和权限识别构成完整访问能力。",
+          "items": [
+            {"title": "统一登录", "description": "账号密码、验证码等标准登录方式。"},
+            {"title": "多终端访问", "description": "PC 与 APP 统一访问体验。"},
+            {"title": "SSO 集成", "description": "企业身份系统单点登录。"},
+            {"title": "账号自助", "description": "支持账号及密码恢复。"},
+            {"title": "权限识别", "description": "按企业身份与权限进入平台。"},
+            {"title": "访问数据", "description": "统一沉淀登录与访问数据。"}
+          ]
+        },
+        {
+          "type": "matrix",
+          "code": "01.08",
+          "title": "多端能力矩阵",
+          "summary": "以矩阵方式呈现员工端、管理端及数据能力覆盖范围。",
+          "headers": ["能力", "员工端", "管理端", "数据"],
+          "rows": [
+            ["账号登录", "✓", "✓", "记录"],
+            ["验证码登录", "✓", "-", "记录"],
+            ["SSO", "✓", "✓", "记录"],
+            ["账号找回", "✓", "✓", "记录"],
+            ["访问统计", "-", "✓", "分析"]
+          ]
+        }
+      ]
+    }
+  ]
+}
